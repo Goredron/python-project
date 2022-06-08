@@ -1,0 +1,39 @@
+faktury (seznam):
+    faktura (objekt):   
+        Číslo faktury (string)
+
+        Odesílatel (objekt):
+            Jméno firmy (string)
+            Ulice (string)
+            č.p. (string)
+            město (string)
+            PSČ (string)
+
+        Příjemce (oběkt):
+            viz - objednavatel
+                        
+        datum vystavení (datetime)
+        datum zplatnosti (datetime)
+        popis (string):
+        cena (int)
+
+
+
+objednavatelé(seznam):
+    objednavatel (objekt):
+        Jméno firmy (string)
+        Ulice (string)
+        č.p. (int)
+        město (string)
+        směrovací č. (int) 
+
+
+
+zakázky (seznam):
+    zakázka (objekt):
+        číslo zakázky (string)
+        objednavatel (objekt):
+            viz - obědnavatel
+        částka (slovnik):
+            mJ (string) - hodnota (int)
+        popis (string)
